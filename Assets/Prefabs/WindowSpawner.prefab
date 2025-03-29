@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 5628014557073655620}
   - component: {fileID: 1509621199787202057}
   - component: {fileID: 5273639346565066057}
+  - component: {fileID: 6070592924708366934}
   m_Layer: 0
   m_Name: WindowSpawner
   m_TagString: Untagged
@@ -121,6 +122,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!208 &6070592924708366934
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161230839477835512}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.25, y: 0.25, z: 0.25}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.25, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3531245004749650424
 GameObject:
   m_ObjectHideFlags: 0
