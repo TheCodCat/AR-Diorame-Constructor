@@ -10,7 +10,7 @@ public class CreateToDragItem : MonoBehaviour
     [SerializeField] private Vector3 hitsInfo = new Vector3();
     public void CreateToItem(BaseEventData baseEventData)
     {
-        if(baseEventData.selectedObject.TryGetComponent(out Item component))
+        if (baseEventData.selectedObject.TryGetComponent(out Item component))
         {
             Block gameObject = Instantiate(component.Prefabs).GetComponent<Block>();
             createItem = gameObject;
@@ -25,7 +25,6 @@ public class CreateToDragItem : MonoBehaviour
 
             if (Physics.Raycast(ray, out RaycastHit hitInfo, 10, layerMask))
             {
-                
                 hitsInfo.x = Mathf.Round(hitInfo.point.x / cellSize) * cellSize;
                 hitsInfo.y = Mathf.Round(hitInfo.point.y / cellSize) * cellSize;
                 hitsInfo.z = Mathf.Round(hitInfo.point.z / cellSize) * cellSize;
